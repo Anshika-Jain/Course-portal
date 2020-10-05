@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Testkit | Login </title>
+    <meta name="viewport" content="width=device-width, user-scalable=yes">
+    <link rel="stylesheet" type="text/css" href="/css/auth/styling.css">
+</head>
+<img src="/images/Polygon%201.png" id="polygon">
+<img src="/images/Path%201.png" id="path">
+
+<body>
+    <div id="container">
+        <img src="/images/orange.png" id="brandlogo">
+        <img src="/images/Intersection%202.png" id="intersectionpath">
+        <h1 id="loginquote">Log in to Monktree</h1>
+        <form action="/login" method="" id="login-form">
+            <div id="wrap">
+                <input type="email" name="login-email" id="email" placeholder="Email" maxlength="100" required>
+                <br />
+                <input type="password" name="login-password" id="password" placeholder="Password" maxlength="100"
+                    required>
+            </div>
+
+            <div id="wrap2">
+                <p id="forget">Forgot your password ? <span id="reset" onclick="resetPasswordLink()"> <strong>
+                            Click here</strong></span></p>
+
+                <button id="signin" type="submit" name="signin">SIGN IN</button>
+            </div>
+        </form>
+
+        <div id="gradient">
+            <img src="/images/Intersection%201.png" id="intersectionpolygon">
+            <h1>Hello, Friend!</h1>
+            <p>Enter your details and start <br /> journey with us</p>
+            <a href="/signup">
+                <input type="button" value="SIGN UP" id="signup" name="signup">
+
+            </a>
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-auth.js"></script>
+    <script src="/scripts/config.js"></script>
+    <script src="/scripts/login.js" defer></script>
+
+</body>
+
+</html>

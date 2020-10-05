@@ -1,0 +1,48 @@
+</head>
+
+<body>
+
+    <button type="button" id="sidebarCollapse" class="addMargin btn btn-md">
+        <i class="fas fa-align-left"></i>
+
+    </button>
+    <ul class="nav justify-content-end ">
+        <li class="nav-item">
+            <a class="nav-link active" href="#"><b><span id="displayName"></span></b></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#"><i class="far fa-bell "></i></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fas fa-cog "></i></a>
+        </li>
+        <li class="nav-item" id="logout">
+            <a class="nav-link"><i class="fas fa-sign-out-alt "></i></a>
+        </li>
+    </ul>
+
+    <div class="wrapper">
+
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>Test Kit</h3>
+            </div>
+            <ul class="list-unstyled components mt-1">
+                <li class="inactive" id="nav-dashboard">
+                    <a href="/home">Dashboard</a>
+                </li>
+                <li class="inactive" id="nav-test-kit">
+                    <a onclick="checkAndLink();">Test Kit</a>
+                </li>
+                <li class="inactive" id="nav-result">
+                    <a href="/result">Result</a>
+                </li> <br><br><br><br><br>
+                <hr>
+            </ul>
+            <ul class="components mt-4">
+                <li><a href="#">Discussion</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+    </div>

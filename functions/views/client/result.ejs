@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.0/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="/css/client/result.css">
+  <title>Coursekit | Result</title>
+
+</head>
+
+<body>
+
+  <button type="button" id="sidebarCollapse" class="addMargin btn btn-md">
+    <i class="fas fa-align-left"></i>
+
+  </button>
+  <div class="verticalNav">
+  <ul class="nav justify-content-end ">
+    <li class="nav-item">
+      <a class="nav-link active" href="#"><b><span id="displayName"></span></b></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#"><i class="far fa-bell "></i></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#"><i class="fas fa-cog "></i></a>
+    </li>
+    <li class="nav-item" id="logout">
+      <a class="nav-link"><i class="fas fa-sign-out-alt "></i></a>
+    </li>
+  </ul>
+</div>
+  <div class="wrapper">
+
+    <nav id="sidebar">
+      <div class="sidebar-header">
+        <h3>Monktree</h3>
+      </div>
+      <ul class="list-unstyled components mt-1">
+        <li class="inactive" id="nav-dashboard">
+          <a href="home.html">Dashboard</a>
+        </li>
+        <li class="inactive" id="nav-dashboard">
+          <a href="courses.html">Courses</a>
+        </li>
+        <li class="inactive" id="nav-dashboard">
+          <a href="ques_bank.html">Question Bank</a>
+        </li>
+        <li class="active" id="nav-dashboard">
+          <a href="result.html">Result & Certificates</a>
+        </li>
+
+        <!-- <li class="inactive" id="nav-test-kit">
+          <a onclick="checkAndLink();">Test Kit</a>
+        </li>
+        <li class="inactive" id="nav-result">
+          <a href="/result">Result</a>
+        </li>  -->
+        <br><br><br><br><br>
+        <hr>
+      </ul>
+      <ul class="components mt-4">
+        <li><a href="#">Discussion</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </nav>
+  </div>
+
+
+  <div class="row justify-content-center">
+    <div class="addMargin text col-8">
+
+      <table class="hide">
+        <thead>
+          <tr>
+            <th>TOPIC</th>
+            <th>ACCURACY</th>
+            <th>DURATION</th>
+            <th>ATTEMPTS</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th class="topic">-</th>
+            <td class="score">-</td>
+            <td class="duration">-</td>
+            <td class="attempts">-</td>
+          </tr>
+          <tr>
+            <th class="topic">-</th>
+            <td class="score">-</td>
+            <td class="duration">-</td>
+            <td class="attempts">-</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+
+
+<h2 class="text-center" id="performance"> <b>Performance</b> </h2>
+<div class="addMargin text">
+
+<div class="row mt-2">
+   <div class="col-10 col-lg-6">
+<ul class="nav nav-tabs nav-fill" data-tabs="tabs">
+  <li class="nav-item"><a data-toggle="tab" class="nav-link active" href="#courses">RECENT COURSES</a></li>
+  <li class="nav-item" ><a data-toggle="tab" class="nav-link" href="#tests">RECENT TESTS</a></li>
+  <li class="nav-item"><a data-toggle="tab" class="nav-link" href="#resume">RESUME</a></li>
+  <!-- <li class="nav-item"><a data-toggle="tab" class="nav-link" href="#menu3">Menu 3</a></li> -->
+</ul>
+
+<div class="tab-content mt-5">
+  <div id="courses" class="tab-pane fade-in active">
+   <ul>
+     <li><p>Web Development</p></li>
+     <li> <p>Software Development</p></li>
+   </ul> 
+  </div>
+  <div id="tests" class="tab-pane fade">  
+    <ul>
+      <li> <p>Get prepared for MICROSOFT interview</p></li>
+      <li><p>Get prepared for CAT </p></li>
+    </ul>     
+  </div>
+  <div id="resume" class="tab-pane fade ml-3">
+    <p>No pending tests</p>
+  </div>
+</div>
+</div>
+<div class="col-10 col-lg-6 my-4"> 
+  <canvas id="myChart" style="position:relative; height:380px;width:98%"></canvas>
+</div>
+</div> 
+</div>
+
+  <!-- <script type="text/javascript" src="/vendors/js/jquery.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+  </script>
+
+  <script type="text/javascript" src="/js/client/result.js" defer></script>
+
+</body>
+
+</html>

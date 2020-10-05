@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Testkit | Signup</title>
+    <meta name="viewport" content="width=device-width, user-scalable=yes">
+    <link rel="stylesheet" type="text/css" href="/css/auth/signup_styling.css">
+</head>
+<img src="/images/Polygon%201.png" id="polygon">
+<img src="/images/Path%201.png" id="path">
+
+<body>
+    <div id="container">
+        <img src="/images/Intersection%201.png" id="intersectionpolygon">
+        <h1 id="createaccount">Create Account</h1>
+
+        <form action="" method="" id="signup-form">
+            <div id="wrap">
+                <input type="text" name="username" id="username" placeholder="Username" maxlength="100" required>
+                <!-- <p id="error" class="error pink-text center-align"></p> -->
+                <input type="email" name="signup-email" id="email" placeholder="Email" maxlength="100" required>
+                <br />
+                <input type="password" name="signup-password" id="password" placeholder="Password" maxlength="100"
+                    required>
+            </div>
+            <div id="wrap2">
+                <button id="signup" type="submit" name="signup">SIGN UP</button>
+            </div>
+        </form>
+
+        <div id="gradient">
+            <img src="/images/monktree%20white.png" id="brandlogo">
+            <img src="/images/Intersection%202.png" id="intersectionpath">
+            <img src="/images/Intersection%203.png" id="intersectionpath2">
+            <h1>Welcome Back!</h1>
+            <p>Please login with your credentials</p>
+            <a href="/login">
+                <input type="button" value="SIGN IN" id="signin" name="signin">
+            </a>
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-firestore.js"></script>
+    <script src="/scripts/config.js"></script>
+    <script src="/scripts/signup.js"></script>
+
+</body>
+
+</html>
