@@ -1,0 +1,478 @@
+
+/**************************************************Info Node*****************************************************************************/
+#info-blank {
+	width: 700px;
+	height: auto;
+    margin: 50px auto;
+ 	background-color: white;
+	box-shadow: 1px 1px 20px 4px #acacbd;
+}
+
+.infoheader{
+     padding: 25px 25px 25px 50px;
+}
+
+.infoheader p{
+    font-size: 16px;
+}
+
+.infoheader input{
+	font-size: 15px;
+	box-sizing: border-box;
+	padding: 7px 7px 7px 20px;
+	border: 2px solid #f7f7f7;
+	color: grey;
+}
+
+.infoheader input:focus{
+	border: 1px solid #f7f7f7;
+	outline: none;
+	background-color: #F5F5F5;
+}
+
+.infoheader select {
+    cursor:pointer;
+    display:inline-block;
+    position:relative;
+    color: white;
+    background: linear-gradient(to bottom left, #FF006F, #FFCC00);
+    border:none;
+    padding: 7px 7px 7px 20px;
+    font-size: 15px;
+    border-radius: 5px;
+
+}
+
+.infoheader select:focus{
+    outline: none;
+}
+
+.infoheader select:hover{
+    opacity: 0.7;
+}
+
+.infoheader option{
+    background-color: white;
+    color: grey;
+   
+}
+
+
+.infofooter{
+    background-color: #f7f7f7;
+    height: 35px;
+}
+
+.cancel{
+	background:  #324370;
+	border-radius: 5px;
+	color: white;
+	font-size: 18px;
+	border: none;
+    float: right;
+    padding: 5px 15px;
+    text-align: center;
+    margin: 3px;
+    
+}
+
+.cancel:focus{
+	outline: none;
+	cursor: pointer;
+}
+
+.cancel:hover {
+    outline: none;
+	background: #050e31;
+}
+
+.next , .Proceed{
+	background-color: #2ecc71;
+	border-radius: 5px;
+	color: white;
+	font-size: 18px;
+	border: none;
+    float: right;
+    padding: 5px 15px;
+    text-align: center;
+    margin: 3px;
+}
+
+.next:focus , .Procced:focus{
+	outline: none;
+	cursor: pointer;
+}
+
+.next:hover , .Proceed:hover {
+    outline: none;
+	background: #009430;
+}
+
+
+
+/**************************************************Question Node  || About the course Node*****************************************************************************/
+
+#section ul{
+  
+        list-style: none;
+        margin: 0;
+        padding: 0;
+   
+}
+
+#section li{
+	background: #fff;
+	height: 40px;
+	line-height: 40px;
+	color: #666;
+}
+
+#section li:nth-child(2n){
+	background: #f7f7f7;
+}
+
+#section input{
+	font-size: 18px;
+	color: #009432;
+	background-color: #f7f7f7;
+	width: 100%;
+	padding: 13px 13px 13px 20px;
+	box-sizing: border-box; 
+	border: 3px solid rgba(0,0,0,0);
+}
+
+#section input:focus{
+	background: #fff;
+	border: 3px solid #009432;
+	outline: none;
+}
+
+#section .fa-plus{
+	float: right;
+
+}
+
+#section span{
+	background: #e74c3c;
+	height: 40px;
+	margin-right: 20px;
+	text-align: center;
+	color: white;
+	width: 0;
+	display: inline-block;
+	transition: 0.2s linear;
+	opacity: 0;
+}
+
+#section li:hover span{
+	width: 40px;
+	opacity: 1.0;
+}
+
+
+#node-blank{
+    width: 760px;
+    height: 500px;
+    margin: 50px auto;
+    background-color: #f7f7f7;
+    box-shadow: 1px 1px 20px 4px #acacbd;
+    position: relative;
+    
+}
+
+
+.node{
+    width: 700px;
+    height: 400px;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: 1px 1px 20px 4px #acacbd;
+}
+
+
+
+.heading1 , #TName {
+    background: linear-gradient(to bottom left, #FF006F, #FFCC00);
+    color: white;
+    margin: 0;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: normal; 
+    
+}
+
+
+.nodeheader{
+    padding: 15px 25px 25px 50px;
+    
+}
+
+#about{
+    
+    width: 100%;
+    height: 100%;
+    border: 2px solid #f7f7f7;
+    color: grey;
+    text-align: center;
+    font-size: 18px;
+    box-sizing: border-box;
+    padding: 13px 13px 13px 13px;
+}
+
+#about:focus{
+    border: 1px solid #f7f7f7;
+    outline: none;
+    background-color: #F5F5F5;
+}
+
+#queno{
+    color: grey;
+    font-size: larger;
+    margin-bottom: 5px;
+}
+
+
+.ques{
+    width: 92%;
+    border: 2px solid #f7f7f7;
+    font-size: 18px;
+    box-sizing: border-box;
+    padding: 13px 13px 13px 20px;
+    color: grey;
+    
+}
+
+.ques:focus{
+    border: 1px solid #f7f7f7;
+    outline: none;
+    background-color: #F5F5F5;
+}
+
+.opt {
+    font-size: 15px;
+    box-sizing: border-box;
+    padding: 7px 7px 7px 20px;
+    border: 2px solid #f7f7f7;
+    color: grey;
+    
+}
+
+.opt:focus{
+    border: 1px solid #f7f7f7;
+    outline: none;
+    background-color: #F5F5F5;
+}
+
+.ans {
+   
+    font-size: 15px;
+    box-sizing: border-box;
+    padding: 7px 7px 7px 20px;
+    border: 2px solid #f7f7f7;
+    color: #009432;
+    background: #C8E6C9;
+}
+
+.ans::placeholder{
+    color: #009432;
+}
+
+.ans:focus{
+    border: 1px solid #f7f7f7;
+    outline: none;
+    background-color: #F5F5F5;
+    color: #009432;
+    background: #E8F5E9;
+}
+
+
+
+.quesclear , .clear{
+    width: 6%; 
+    background-color: #dcdde1;
+    color: white;
+    border: none;
+    border-radius: 10%;
+    height: 25px;
+    margin-left: 10px;
+}
+
+.quesclear{
+    height: 40px;
+}
+.quesclear:focus , .clear:focus{
+    outline: none;
+}
+
+.quesclear:hover , .clear:hover {
+    outline: none;
+    background: #a4b0be;
+}
+
+.nodefooter{
+    background-color: #f7f7f7;
+    height: 37px;
+    
+}
+
+.reset {
+    background:  #324370;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    border: none;
+    float: right;
+    padding: 5px 15px;
+    text-align: center;
+    margin: 3px;
+    
+}
+
+.reset:focus{
+    outline: none;
+    cursor: pointer;
+}
+
+.reset:hover  {
+    outline: none;
+    background: #050e31;
+}
+
+.savenode{
+    background: #2ecc71;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    border: none;
+    float: right;
+    padding: 5px 15px;
+    text-align: center;
+    margin: 3px;
+}
+
+.savenode:focus{
+    outline: none;
+    cursor: pointer;
+}
+
+.savenode:hover {
+    outline: none;
+    background: #009430;
+}
+
+#savetestbtn{
+     position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: grey;
+  font-size: 25px;
+  text-align: center;
+}
+
+.savetestbtn{
+    background: linear-gradient(to bottom left, #FF006F, #FFCC00);
+    border-radius: 5px;
+    color: white;
+    font-size: 28px;
+    border: none;
+    padding: 5px 15px;
+    text-align: center;
+    margin: 3px;
+    
+}
+
+.savetestbtn:focus{
+    outline: none;
+    cursor: pointer;
+}
+
+.savetestbtn:hover {
+    outline: none;
+    opacity: 0.7;
+}
+
+
+/**************************************************Question List || Course Details*****************************************************************************/
+
+#node-list{
+    width: 760px;
+    height: auto;
+    margin: 50px auto;
+    background-color: #f7f7f7;
+    box-shadow: 1px 1px 20px 4px #acacbd;
+    position: relative;
+
+}
+
+.information{
+    width: 650px;
+    height: auto;
+    margin: 20px auto;
+    background-color:  #324370;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 20px 4px #acacbd;
+    padding: 10px 25px 10px 25px;
+   
+
+}
+
+.nodelist{
+    width: 650px;
+    height: 300px;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: 1px 1px 20px 4px #acacbd;
+    padding: 15px 15px 25px 15px;
+}
+
+.quescss{
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    background: linear-gradient(to bottom left, #FF006F, #FFCC00);
+    padding: 13px 13px 13px 20px;
+    box-sizing: border-box;
+    color: white;
+}
+
+.nodelist ul{
+    line-height: 85%;
+}
+
+.nodelist li{
+    list-style: circle;
+    color: grey;
+}
+
+
+.optcss{
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    box-sizing: border-box;
+    padding: 7px 40px 7px 40px;
+    color: grey;
+    background-color: #F5F5F5;
+    margin: 0;
+    width: fit-content;
+    margin-left: 40px;
+}
+
+.anscss{
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    box-sizing: border-box;
+    padding: 7px 40px 7px 40px;
+    color: #009432;
+    background-color: #C8E6C9;
+    margin: 0;
+    width: fit-content;
+    float: right;
+    margin-right: 30px;
+}
